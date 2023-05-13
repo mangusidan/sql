@@ -33,13 +33,11 @@ end
 
 # # ex4
 # class Numeric
-#     KANSUJI = %w[零 一 二 三 四 五 六 七 八 九]
-    
-#     def to_kansuji
-#       return KANSUJI[0] if self == 0
-#       digits = self.digits.reverse
-#       digits.map { |d| KANSUJI[d] }.join
-#     end
+#   KANSUJI = %w[零 一 二 三 四 五 六 七 八 九]
+#   def to_kansuji
+#     return KANSUJI[0] if self == 0
+#     digits = self.digits.reverse
+#     digits.map { |d| KANSUJI[d] }.join
 #   end
 # end
 # class String
@@ -47,9 +45,7 @@ end
 #     return 0 if self == "零"
 #     KANSUJI.each_with_index do |k, i|
 #       return i if k == self
-#       end
-#       raise ArgumentError, "Invalid kanji character: #{self}"
-#       end
 #     end
-#   end 
-# end 
+#     raise ArgumentError, "Invalid kanji character: #{self}"
+#   end
+# end
